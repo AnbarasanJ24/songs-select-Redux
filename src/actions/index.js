@@ -8,3 +8,8 @@ export const selectSong = (song) => {
     }
 }
 
+export const fetchPost = () => {
+    return {
+        type: 'FETCH POSTS'
+    }
+}
