@@ -31,7 +31,7 @@ export const fetchPostES = () => {
 }
 
 export const fetchUser = (userId) => async dispatch => {
-    const response = await jsonPlaceHolder.get(`/user/${userId}`);
+    const response = await jsonPlaceHolder.get(`/users/${userId}`);
 
     dispatch({
         type: 'FETCH USER',
