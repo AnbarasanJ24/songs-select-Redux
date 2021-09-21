@@ -1,29 +1,31 @@
 import { combineReducers } from "redux";
+import postReducer from "./postReducers";
 
-const songReducer = () => {
-    return [
-        { title: 'Song 1', duration: 4.05 },
-        { title: 'Song 2', duration: 3.15 },
-        { title: 'Song 3', duration: 5.35 },
-        { title: 'Song 4', duration: 2.05 },
-        { title: 'Song 5', duration: 2.55 },
-    ]
-}
+// const songReducer = () => {
+//     return [
+//         { title: 'Song 1', duration: 4.05 },
+//         { title: 'Song 2', duration: 3.15 },
+//         { title: 'Song 3', duration: 5.35 },
+//         { title: 'Song 4', duration: 2.05 },
+//         { title: 'Song 5', duration: 2.55 },
+//     ]
+// }
 
 
-const selectedSongReducer = (selectedSong = null, action) => {
-    switch (action.type) {
+// const selectedSongReducer = (selectedSong = null, action) => {
+//     switch (action.type) {
 
-        case 'SELECT_SONG':
-            return action.payload;
+//         case 'SELECT_SONG':
+//             return action.payload;
 
-        default:
-            return selectedSong;
+//         default:
+//             return selectedSong;
 
-    }
-}
+//     }
+// }
 
 export default combineReducers({
-    songs: songReducer,
-    selectedSong: selectedSongReducer
+    // songs: songReducer,
+    // selectedSong: selectedSongReducer
+    posts: postReducer
 })
